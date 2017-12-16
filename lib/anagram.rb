@@ -14,7 +14,7 @@ attr_accessor :word, :array
       possible_match_split = []
       word_split = []
       possible_match_split = possible_match.split
-      word_split = word.split
+      word_split = @word.split
       if possible_match_split.sort==word_split.sort
         @array << possible_match
       end
