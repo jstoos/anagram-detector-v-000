@@ -13,8 +13,8 @@ attr_accessor :word, :array
     array_of_anagrams.each do |possible_match|
       possible_match_split = []
       word_split = []
-      possible_match_split = possible_match.split
-      word_split = @word.split
+      possible_match_split = possible_match.split("")
+      word_split = @word.split("")
 binding.pry
       if possible_match_split.sort==word_split.sort
         @array << possible_match
