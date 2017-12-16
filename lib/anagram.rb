@@ -10,6 +10,10 @@ attr_accessor :word, :array
   def match(array_of_anagrams)
     @array = []
     array_of_anagrams.each do |possible_match|
+      possible_match_split = []
+      word_split = []
+      possible_match_split = possible_match.split
+      word_split = word.split
       if possible_match.sort==word.sort
         @array << possible_match
       end
