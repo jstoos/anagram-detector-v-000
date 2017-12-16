@@ -1,5 +1,5 @@
 # Your code goes here!
-
+attr_accessor :word
 
 class Anagram
 
@@ -10,5 +10,5 @@ class Anagram
   def match(array_of_anagrams)
 
 
-    #returns all matches in an array, if none returns[]
+    #returns all matches to "word" in an array, if none returns[]
 end
