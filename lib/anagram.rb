@@ -11,9 +11,9 @@ attr_accessor :word, :array
   def match(array_of_anagrams)
     @array = []
     array_of_anagrams.each do |possible_match|
-      # possible_match_split = []
-      # word_split = []
-      possible_match_split==possible_match.split("")
+      possible_match_split = []
+      word_split = []
+      possible_match_split = possible_match.split("")
       word_split = @word.split("")
 
       if possible_match_split.sort==word_split.sort
